@@ -478,4 +478,52 @@ function calcTip(percentTip, amt) {
 const myTip = calcTip(10, 200);
 console.log("Your tip is " + myTip + " naira");
 
-console.log(amt); //-> WARNING function parameters are Local variables. Reference Error!!
+/* console.log(amt); //-> WARNING function parameters are Local variables. Reference Error!!
+ */  
+ function trueOrFalse(wasThatTrue) {
+	if (wasThatTrue) {
+		return "Yes, It's true";
+	}
+	   return "No, that's false";
+ }
+
+ console.log(trueOrFalse(true));
+ console.log(trueOrFalse(false));
+
+ function checkIfAvailable(color) {
+	const colors = ["red", "green", "orange", "blue", "yellow"];
+	if (colors.includes(color)) {
+		return "Yes, " + color + " is available";
+	}
+	return "No, " + color + " is Not available";
+ }
+ let isColorAvailable = "";
+ isColorAvailable = checkIfAvailable("red");
+ console.log(isColorAvailable);
+ isColorAvailable = checkIfAvailable("brown");
+ console.log(isColorAvailable);
+
+ /* example 2 */
+
+ function isEqualTo10(val) {
+	if (val == 10){
+		return "Equal";
+	}
+	return "Not Equal"
+ }
+
+ let result = "";
+ result = isEqualTo10(10);
+ console.log(result);
+
+ result = isEqualTo10("10")
+ console.log(result);
+
+ /* example 3 */
+ function isStrictlyEqualTo10(val) {
+	if (val ===10) {
+		return "Equal";
+	}
+	return " Not Equal";
+ }
+ result = isStrictly 
