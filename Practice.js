@@ -539,7 +539,7 @@ console.log(trueOrFalse(true));
 console.log(trueOrFalse(false));
 
 /* 
-	Comparison Operators 
+	Comparison Operators - are JavaScript operators which compare operands on the left and right which results in a Boolean. Either True or False 
 	1. Equality (==)
 	2. Strict Equality (===)
 	3. Inequality (!=)
@@ -559,14 +559,25 @@ console.log(trueOrFalse(false));
 
 	- In oder to avoid stories that touch the heart use strict equality or strict inequality where ever possible.
 
+<<<<<<< HEAD
 	-In JavaScript there are 6 false values.
 	i.e values that evaluate to false when coerced to Boolean .
+=======
+	- In JavaScript there are 6 falsy values. 
+	i.e values that evaluate to false when coerced to Boolean.
+>>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
 	1. false
 	2. 0 (zero)
 	3. '' or ""
 	4. null
+<<<<<<< HEAD
 	5. undefined
 	6.NaN
+=======
+	5.undefined
+	6. NaN
+
+>>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
 */
 
 //Example 1
@@ -601,7 +612,7 @@ console.log(result);
 result = isEqualTo10("10");
 console.log(result); //-> Equal due to Type Coercion
 
-// Example 3
+// Example 3 - Strict Equality
 function isStrictlyEqualTo10(val) {
 	if (val === 10) {
 		return "Equal";
@@ -616,6 +627,7 @@ Assignment
 Demonstrate the comparison operators using a functions that return "Equal" if true or "Not Equal" if false
 */
 
+<<<<<<< HEAD
 
 
 
@@ -633,16 +645,43 @@ Demonstrate the comparison operators using a functions that return "Equal" if tr
 /* classwork-Replace the following nested if statements with logical AND operators */
 
 /* function testLogicalAND(val) {
+=======
+/* 
+	Example 4 Logical AND Operator 
+  
+	Ok Sometimes you want to test more than one thing at a time. The logical AND operator returns true ONLY if the operands on the left and right of it evaluate to true.
+
+	So if true && true //-> true however false && true //-> false
+
+*/
+let num = 5;
+if (num > 2 && num < 8) {
+	console.log("Yes");
+}
+/* console.log("No"); */
+
+/* 
+ClassWork - Replace the following nested if statements with a logical AND operator 
+
+function testLogicalAND(val) {
+>>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
 	if (val >= 3) {
 		if (val < 7) {
 			return "Yes";
 		}
 	}
+<<<<<<< HEAD
 	return "No"
 }
 
 console.log(testLogicalAND(4));
 console.log(testLogicalAND(2)); */
+=======
+	return "No";
+}
+
+*/
+>>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
 
 function testLogicalAND(val) {
 	if (val >= 3 && val < 7) {
@@ -654,6 +693,7 @@ function testLogicalAND(val) {
 console.log(testLogicalAND(4));
 console.log(testLogicalAND(2));
 
+<<<<<<< HEAD
 
 
 
@@ -680,6 +720,25 @@ if (num > 10 || num < 5 ) {
 	console.log ( "No");
 }
  function testLogicalOR(val) {
+=======
+/* 
+	Example 5 Logical OR Operator 
+  
+	Ok Sometimes you want to test more than one thing at a time. The logical OR operator returns true ONLY if either of the operands on the left and right of it evaluate to true.
+
+	So if true && false //-> true however false && false //-> false
+*/
+
+num = 3;
+if (num > 10 || num < 5) {
+	console.log("No");
+}
+/* console.log("Yes"); */
+
+/*ClassWork - Replace the following if statements with a logical OR operator 
+
+function testLogicalOR(val) {
+>>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
 	if (val > 15) {
 		return "Outside";
 	}
@@ -687,6 +746,7 @@ if (num > 10 || num < 5 ) {
 		return "Outside";
 	}
 	return "Inside";
+<<<<<<< HEAD
  }
 
  console.log(testLogicalOR(15));
@@ -697,10 +757,22 @@ if (num > 10 || num < 5 ) {
 	return"Outside"
  }
  return "Inside"
+=======
+}
+
+*/
+
+function testLogicalOR(val) {
+	if (val > 15 || val <= 10) {
+		return "Outside";
+	}
+	return "Inside";
+>>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
 }
 console.log(testLogicalOR(15));
 console.log(testLogicalOR(10));
 
+<<<<<<< HEAD
 /*
  We know that when an if statement is true, the block of code
  following it is executed. However  what happens if the condition is false ? Normally nothing happens. However with an else statement we can execute an alternative block of code */
@@ -712,10 +784,28 @@ console.log(testLogicalOR(10));
  } */
  /* Classwork - Combine the multiple if statements into a single if/else statements*/
 /*  function elseTest(val) {
+=======
+/* 
+Else Statement
+	We know that when an if statement condition is true, the block of code following it is executed. However what happens if the condition is false? Normally nothing happens. However with an else statement we can execute an alternative block of code.
+*/
+
+if (num > 12) {
+	console.log("Bigger than 12");
+} else {
+	console.log("12 or less");
+}
+
+/* 
+Classwork - Combine the multiple if statements into a single if/else statement
+
+function elseTest(val) {
+>>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
 	let r = "";
 	if (val > 4) {
 		r = "Bigger than 4";
 	}
+<<<<<<< HEAD
 	if (val <= 4){
 		r = "4 or Smaller";
 	}
@@ -725,6 +815,16 @@ console.log(testLogicalOR(10));
  elseTest(6);
  */
  function elseTest(val) {
+=======
+	if (val <= 4) {
+		r = "4 or Smaller";
+	}
+
+	console.log(r);
+}
+*/
+function elseTest(val) {
+>>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
 	let r = "";
 	if (val > 4) {
 		r = "Bigger than 4";
@@ -732,6 +832,7 @@ console.log(testLogicalOR(10));
 		r = "4 or Smaller";
 	}
 	console.log(r);
+<<<<<<< HEAD
  }
  elseTest(3);
  elseTest(6);
@@ -764,3 +865,55 @@ console.log(testLogicalOR(10));
  console.log(testElseIf(8));
  console.log(testElseIf(4));
 
+=======
+}
+
+elseTest(3);
+elseTest(6);
+
+/* 
+ Else if Statement 
+
+ If you need to evaluate multiple conditions, then you chain if statements together with the else if statement.
+
+ Please note that the Order of evaluation in else if statements is important. Since the function is executed from top to bottom. So pay attention to what statement comes first.
+
+*/
+
+num = 2;
+if (num > 20) {
+	console.log("Bigger than 20");
+} else if (num < 10) {
+	console.log("smaller than 10");
+} else {
+	console.log("between 10 and 20");
+}
+
+/* 
+	Classwork - Convert the logic of the following code to use the else if Statement
+
+	function testElseIf(val) {
+	if (val >= 15) {
+		return "Greater than or equal to 15";
+	}
+	if (val < 5) {
+		return "smaller than 5";
+	}
+	return "between 5 and 15";
+}
+*/
+
+function testElseIf(val) {
+	if (val >= 15) {
+		return "Greater than or equal to 15";
+	} else if (val < 5) {
+		return "smaller than 5";
+	} else {
+		return "between 5 and 15";
+	}
+}
+
+console.log(testElseIf(15));
+console.log(testElseIf(8));
+console.log(testElseIf(4));
+>>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
