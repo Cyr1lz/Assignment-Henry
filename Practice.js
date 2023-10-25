@@ -559,25 +559,15 @@ console.log(trueOrFalse(false));
 
 	- In oder to avoid stories that touch the heart use strict equality or strict inequality where ever possible.
 
-<<<<<<< HEAD
-	-In JavaScript there are 6 false values.
-	i.e values that evaluate to false when coerced to Boolean .
-=======
 	- In JavaScript there are 6 falsy values. 
 	i.e values that evaluate to false when coerced to Boolean.
->>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
 	1. false
 	2. 0 (zero)
 	3. '' or ""
 	4. null
-<<<<<<< HEAD
-	5. undefined
-	6.NaN
-=======
 	5.undefined
 	6. NaN
 
->>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
 */
 
 //Example 1
@@ -627,25 +617,6 @@ Assignment
 Demonstrate the comparison operators using a functions that return "Equal" if true or "Not Equal" if false
 */
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-/* console.log("No"); */
-
-/* classwork-Replace the following nested if statements with logical AND operators */
-
-/* function testLogicalAND(val) {
-=======
 /* 
 	Example 4 Logical AND Operator 
   
@@ -664,24 +635,15 @@ if (num > 2 && num < 8) {
 ClassWork - Replace the following nested if statements with a logical AND operator 
 
 function testLogicalAND(val) {
->>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
 	if (val >= 3) {
 		if (val < 7) {
 			return "Yes";
 		}
 	}
-<<<<<<< HEAD
-	return "No"
-}
-
-console.log(testLogicalAND(4));
-console.log(testLogicalAND(2)); */
-=======
 	return "No";
 }
 
 */
->>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
 
 function testLogicalAND(val) {
 	if (val >= 3 && val < 7) {
@@ -693,7 +655,6 @@ function testLogicalAND(val) {
 console.log(testLogicalAND(4));
 console.log(testLogicalAND(2));
 
-<<<<<<< HEAD
 
 
 
@@ -720,7 +681,6 @@ if (num > 10 || num < 5 ) {
 	console.log ( "No");
 }
  function testLogicalOR(val) {
-=======
 /* 
 	Example 5 Logical OR Operator 
   
@@ -738,7 +698,6 @@ if (num > 10 || num < 5) {
 /*ClassWork - Replace the following if statements with a logical OR operator 
 
 function testLogicalOR(val) {
->>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
 	if (val > 15) {
 		return "Outside";
 	}
@@ -746,18 +705,6 @@ function testLogicalOR(val) {
 		return "Outside";
 	}
 	return "Inside";
-<<<<<<< HEAD
- }
-
- console.log(testLogicalOR(15));
- console.log(testLogicalOR(10));
- */
- function testLogicalOR(val){
- if (val > 15 || val <= 10 ){
-	return"Outside"
- }
- return "Inside"
-=======
 }
 
 */
@@ -767,24 +714,10 @@ function testLogicalOR(val) {
 		return "Outside";
 	}
 	return "Inside";
->>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
 }
 console.log(testLogicalOR(15));
 console.log(testLogicalOR(10));
 
-<<<<<<< HEAD
-/*
- We know that when an if statement is true, the block of code
- following it is executed. However  what happens if the condition is false ? Normally nothing happens. However with an else statement we can execute an alternative block of code */
-
- /* if (num > 12) {
-	console.log("Bigger than 12");
- } else {
-	console.log("12 or less");
- } */
- /* Classwork - Combine the multiple if statements into a single if/else statements*/
-/*  function elseTest(val) {
-=======
 /* 
 Else Statement
 	We know that when an if statement condition is true, the block of code following it is executed. However what happens if the condition is false? Normally nothing happens. However with an else statement we can execute an alternative block of code.
@@ -800,22 +733,10 @@ if (num > 12) {
 Classwork - Combine the multiple if statements into a single if/else statement
 
 function elseTest(val) {
->>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
 	let r = "";
 	if (val > 4) {
 		r = "Bigger than 4";
 	}
-<<<<<<< HEAD
-	if (val <= 4){
-		r = "4 or Smaller";
-	}
-	console.log(r);
- }
- elseTest(3);
- elseTest(6);
- */
- function elseTest(val) {
-=======
 	if (val <= 4) {
 		r = "4 or Smaller";
 	}
@@ -824,7 +745,6 @@ function elseTest(val) {
 }
 */
 function elseTest(val) {
->>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
 	let r = "";
 	if (val > 4) {
 		r = "Bigger than 4";
@@ -832,40 +752,6 @@ function elseTest(val) {
 		r = "4 or Smaller";
 	}
 	console.log(r);
-<<<<<<< HEAD
- }
- elseTest(3);
- elseTest(6);
-
-
- num = 2;
- 
- if (num > 20 ) {
-	console.log ("Bigger than 20");
- } else if (num < 10 ) {
-	console.log ("Smaller than 10");
- } else {
-	console.log ("between 10 and 20");
- }
-
-/* classwork -convert the logic of the following code to use the else if statement */
-
- function testElseIf(val) {
-	if (val >= 15 ) {
-	 return "Greater than or equal to 15";
-	}
-	 else if (val < 5) {
-	    return "Smaller than 5";
-	} else  { 
-		return "between 5 and 15"}
-	
- }
-
- console.log(testElseIf(15));
- console.log(testElseIf(8));
- console.log(testElseIf(4));
-
-=======
 }
 
 elseTest(3);
@@ -916,4 +802,28 @@ function testElseIf(val) {
 console.log(testElseIf(15));
 console.log(testElseIf(8));
 console.log(testElseIf(4));
->>>>>>> 53fdb1e3aeb1c6dd472912b618bade8e009b0680
+
+    /* LOGIC CLASSWORK  */
+ function testMySize(num) {
+	if (num < 5) {
+		return " Tiny";
+	} else if (num < 10) {
+		return " Small";
+	} else if (num < 15) {
+		return " Medium";
+	} else if (num < 20) {
+		return " Large";
+	} else {
+		return " Huge";
+	}
+}
+
+console.log(testMySize(0))
+console.log(testMySize(4))
+console.log(testMySize(5))
+console.log(testMySize(8))
+console.log(testMySize(15))
+console.log(testMySize(18))
+console.log(testMySize(20))
+console.log(testMySize(25))
+
